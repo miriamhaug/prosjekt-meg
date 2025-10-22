@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <style>
-         .nav {
+        .header {
+            margin: auto;
+            padding: 0;
+        }
+
+        .nav {
             background-color: aliceblue;
         }
 
@@ -21,15 +27,63 @@
             padding: 10px;
         }
 
-        .nav a:hover{
+        .nav a:hover {
             background-color: aliceblue;
             transition: 500ms;
         }
+
+        h1 {
+            text-align: center;
+        }
+
+        .Dans {
+            background-color: aliceblue;
+
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            /* bilde tar 1 del, tekst tar 2 */
+            align-items: center;
+        }
+
+        .tekst-dans {
+            text-align: center;
+        }
+
+        .img {
+            width: 300px;
+            display: block;
+        }
+
+        .img img {
+            width: 100%;
+        }
+
+        .danse-bilder > img{
+            width: 300px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+           
+        }
+        .danse-bilder{
+             grid-template-columns: 1fr 1fr 1fr;
+        }
+        .danse-bilder {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* tre like kolonner */
+            gap: 10px; /* valgfritt mellomrom */
+        }
+
+        .danse-bilder img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
     </style>
 </head>
+
 <body>
     <header>
-         <div class="nav">
+        <div class="nav">
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="timeplan.html">Timeplan</a></li>
@@ -41,9 +95,9 @@
         Mine interesser
     </h1>
 
-     <main>
-       
-        <div class="container">
+    <main>
+
+        <!--  <div class="container">
         <div class="header">Miriam</div>
         <div class="menu">
             <img src="bilde.jpg" alt="Beskrivelse av bildet" width="300">
@@ -54,14 +108,32 @@
         </div>
         <div class="footer">
             <h1>Footer</h1>
+        </div> -->
+        <div class="Dans">
+
+            <div class="img">
+                <img src="./bilder/Kompani-photoshoot.JPG" alt="">
+            </div>
+            <div class="tekst-dans">
+                <h2>Dans</h2>
+                <p>Her er teksten</p>
+            </div>
+
         </div>
+        <div class="danse-bilder">
+            <img src="./bilder/Revydanserne.JPG" alt="Danserne i Nadderudrevyen 2025 'ta deg en pille' ">
+            <img src="./bilder/Solo-photoshoot.jpg" alt="">
+            <img src="./bilder/Dansefot.JPG" alt="">
+        </div>
+
     </main>
 
 
 
     <footer>
-        
+
     </footer>
 
 </body>
+
 </html>
