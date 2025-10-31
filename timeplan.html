@@ -5,18 +5,21 @@
     <meta charset="utf-8">
     <title>Timeplan</title>
 
+    <link rel="stylesheet" href="">
     <style>
-        *{
+        * {
             margin: auto;
             padding: 0;
         }
-         .nav {
+
+        .nav {
             background-color: aliceblue;
         }
 
         .nav>ul {
             display: flex;
             justify-content: space-around;
+            list-style: none;
         }
 
         .nav a {
@@ -26,10 +29,11 @@
             padding: 10px;
         }
 
-        .nav a:hover{
+        .nav a:hover {
             background-color: aliceblue;
             transition: 500ms;
         }
+
         body {
             align-items: center;
             background-color: rgb(167, 197, 223);
@@ -39,7 +43,9 @@
         .container {
             max-width: 800;
             margin: 0 auto;
-            background-color: #fff;
+            background-color: rgb(167, 197, 223);
+            padding-left: 20px;
+            padding-right: 20px;
 
         }
 
@@ -48,9 +54,10 @@
             border: 1px solid black;
             text-align: center;
             padding: 20px 0;
-            
+
         }
-        th{
+
+        th {
             background-color: rgb(25, 81, 129);
             color: #fff;
         }
@@ -71,41 +78,61 @@
             text-align: center;
 
         }
-        .IT{
+
+        .IT {
             background-color: lightblue;
         }
-        .Rettslære{
+
+        .Rettslære {
             background-color: rgb(171, 199, 223);
         }
-        .Samfunnsøkonomi{
+
+        .Samfunnsøkonomi {
             background-color: rgb(189, 216, 239);
 
         }
-        .Norsk{
+
+        .Norsk {
             background-color: rgb(166, 213, 253);
         }
-        .Fransk{
+
+        .Fransk {
             background-color: rgb(131, 180, 222);
         }
-        .Matte{
+
+        .Matte {
             background-color: rgb(124, 176, 222);
         }
-        .Gym{
+
+        .Gym {
             background-color: rgb(121, 185, 240);
         }
-        .Historie{
+
+        .Historie {
             background-color: rgb(91, 171, 241);
         }
-        .Klassenstime{
+
+        .Klassenstime {
             background-color: rgb(142, 182, 218);
         }
+
+        .fag-valg{
+            background-color: rgb(202, 225, 245);
+            text-align: center;
+            
+            margin: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+       
     </style>
 
 </head>
 
-<body>
+<body class="timeplan">
     <header>
-         <div class="nav">
+        <div class="nav">
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="timeplan.html">Timeplan</a></li>
@@ -152,7 +179,7 @@
                     <td></td>
                     <td class="Matte">Matte</td>
                 </tr>
-                
+
                 <tr>
                     <td>10:00-11:35</td>
                     <td class="Matte" colspan="2">Matte</td>
@@ -160,13 +187,13 @@
                     <td class="Norsk" colspan="2">Norsk</td>
                     <td class="Historie" colspan="2">Historie</td>
                     <td class="IT" colspan="2">IT</td>
-                    
+
                 </tr>
-                
+
                 <tr>
                     <td>11:35-12:20</td>
                     <td colspan="10">Lunsj</td>
-                    
+
                 </tr>
                 <tr>
                     <td>12:20-13:55</td>
@@ -175,9 +202,9 @@
                     <td class="IT" colspan="2">IT</td>
                     <td class="Samfunnsøkonomi" colspan="2">Samføk </td>
                     <td class="Fransk" colspan="2">Fransk</td>
-                    
+
                 </tr>
-                
+
                 <tr>
                     <td>14:05-15:40</td>
                     <td class="Klassenstime">Kl.time</td>
@@ -185,13 +212,17 @@
                     <td class="Rettslære" colspan="2">Rettslære</td>
                     <td colspan="2"></td>
                     <td colspan="2"></td>
-                    
+
                 </tr>
             </tbody>
         </table>
     </div>
+    <div class="fag-valg">
+        <h5>Fagvalg</h5>
+        <p>Jeg går SSØ her på Nadderud VGS. Da jeg skulle velge programfag til 2. klasse visste jeg også at det var den retningen jeg kom til å gå. Likevel visste jeg også godt at it og programmering er noe jeg syntes er spennende, og derfor et fag jeg kom til å ha lyst til å ta.</p>
+    </div>
     <footer>
-    <h1>Min footer</h1>
+        <h1>Min footer</h1>
     </footer>
 </body>
 

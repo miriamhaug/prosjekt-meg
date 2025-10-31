@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         .header {
             margin: auto;
@@ -18,6 +19,7 @@
         .nav>ul {
             display: flex;
             justify-content: space-around;
+            list-style: none;
         }
 
         .nav a {
@@ -31,57 +33,16 @@
             background-color: aliceblue;
             transition: 500ms;
         }
-
-        h1 {
-            text-align: center;
-        }
-
-        .Dans {
-            background-color: aliceblue;
-
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            /* bilde tar 1 del, tekst tar 2 */
-            align-items: center;
-        }
-
-        .tekst-dans {
-            text-align: center;
-        }
-
-        .img {
-            width: 300px;
-            display: block;
-        }
-
-        .img img {
-            width: 100%;
-        }
-
-        .danse-bilder > img{
-            width: 300px;
-            aspect-ratio: 1/1;
-            object-fit: cover;
-           
-        }
-        .danse-bilder{
-             grid-template-columns: 1fr 1fr 1fr;
-        }
-        .danse-bilder {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* tre like kolonner */
-            gap: 10px; /* valgfritt mellomrom */
-        }
-
-        .danse-bilder img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
+       
+        h1{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 40px;
         }
     </style>
 </head>
 
-<body>
+<body class="interesser">
     <header>
         <div class="nav">
             <ul>
@@ -97,18 +58,7 @@
 
     <main>
 
-        <!--  <div class="container">
-        <div class="header">Miriam</div>
-        <div class="menu">
-            <img src="bilde.jpg" alt="Beskrivelse av bildet" width="300">
-        </div>
-        <div class="content">
-            <H1>Kort om meg</H1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id reprehenderit sunt beatae. Temporibus, ullam quam illo dolorem accusamus quibusdam, consequatur voluptate, unde blanditiis veritatis veniam excepturi est omnis ratione voluptatem?
-        </div>
-        <div class="footer">
-            <h1>Footer</h1>
-        </div> -->
+
         <div class="Dans">
 
             <div class="img">
@@ -116,7 +66,11 @@
             </div>
             <div class="tekst-dans">
                 <h2>Dans</h2>
-                <p>Her er teksten</p>
+                <p>Dans er min største kjærlighet. Jeg har danset siden jeg var bare tre år gammel og jeg elsker det.
+                    Jazz, ballett, hiphop, samtid, moderne, commercial, tåspiss, house og heels, you name it, jeg har
+                    dansa det meste. Som amatør og proffesjonell, du har kanskje sett meg på scenen i Nadderudrevyen, på
+                    Folketeatheret eller i Bærum kulturhus. Jeg er snart relevant i KGB dans og balletts oppsetning av
+                    "Nøtteknekkeren", hvor jeg både har solist rolle og er en del av ensamblet. </p>
             </div>
 
         </div>
@@ -126,12 +80,45 @@
             <img src="./bilder/Dansefot.JPG" alt="">
         </div>
 
+
+        <div class="konserter">
+            <div class="tekst-konserter">
+                <h3>Konserter</h3>
+                <p>Jeg elsker å være på konserter. Den høye musikken, vibrasjonene i bakken og alle rundt deg som har
+                    kommet fordi de liker å høre på samme artist som deg. Til nå i år har jeg vært på to konserter, og
+                    jeg skal på to til før året er omme. Drømme artisten min å se live på en konsert er Bruno Mars.</p>
+            </div>
+            <div class="img">
+                <img src="./bilder/Ed-sheeran.jpeg" alt="">
+            </div>
+        </div>
+        <div class="konsert-bilder">
+            <img src="./bilder/Olivia-rodrigo.jpeg" alt="">
+            <img src="./bilder/Imagion-dragons1.jpeg" alt="">
+            <img src="./bilder/Undergrunn.jpeg" alt="">
+        </div>
+
+        <div class="venner">
+            <div class="tekst-venner">
+                <h4>Venner</h4>
+                <p>her står det om venner</p>
+            </div>
+            <div class="img">
+                <img src="./bilder/Tuva-syttende-mai.JPG" alt="">
+            </div>
+        </div>
+        <div class="venner-bilder">
+            <img src="./bilder/LillyMathea.jpeg" alt="">
+            <img src="./bilder/Tuva-Maya-Hyttetur.JPG" alt="">
+            <img src="./bilder/Ida-17-mai.JPG" alt="">
+        </div>
+
     </main>
 
 
 
     <footer>
-
+        Footer
     </footer>
 
 </body>
