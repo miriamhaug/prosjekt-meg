@@ -5,127 +5,15 @@
     <meta charset="utf-8">
     <title>Timeplan</title>
 
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <style>
-        * {
-            margin: auto;
-            padding: 0;
-        }
-
-        .nav {
-            background-color: aliceblue;
-        }
-
-        .nav>ul {
-            display: flex;
-            justify-content: space-around;
-            list-style: none;
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: rgb(103, 164, 218);
-            font-size: 20px;
-            padding: 10px;
-        }
-
-        .nav a:hover {
-            background-color: aliceblue;
-            transition: 500ms;
-        }
-
-        body {
-            align-items: center;
-            background-color: rgb(167, 197, 223);
-        }
-
-
-        .container {
-            max-width: 800;
-            margin: 0 auto;
-            background-color: rgb(167, 197, 223);
-            padding-left: 20px;
-            padding-right: 20px;
-
-        }
-
-        th,
-        td {
-            border: 1px solid black;
-            text-align: center;
-            padding: 20px 0;
-
-        }
-
-        th {
-            background-color: rgb(25, 81, 129);
-            color: #fff;
-        }
-
-        table {
-            border: 5px solid rgb(22, 63, 99);
-            border-collapse: collapse;
-            text-align: center;
-            width: 100%;
-            background-color: #fff;
-            table-layout: fixed;
-        }
-
-
-        h1 {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            text-align: center;
-
-        }
-
-        .IT {
-            background-color: lightblue;
-        }
-
-        .Rettslære {
-            background-color: rgb(171, 199, 223);
-        }
-
-        .Samfunnsøkonomi {
-            background-color: rgb(189, 216, 239);
-
-        }
-
-        .Norsk {
-            background-color: rgb(166, 213, 253);
-        }
-
-        .Fransk {
-            background-color: rgb(131, 180, 222);
-        }
-
-        .Matte {
-            background-color: rgb(124, 176, 222);
-        }
-
-        .Gym {
-            background-color: rgb(121, 185, 240);
-        }
-
-        .Historie {
-            background-color: rgb(91, 171, 241);
-        }
-
-        .Klassenstime {
-            background-color: rgb(142, 182, 218);
-        }
-
-        .fag-valg{
-            background-color: rgb(202, 225, 245);
-            text-align: center;
-            
-            margin: 30px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
        
+
+      
     </style>
 
 </head>
@@ -137,11 +25,12 @@
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="timeplan.html">Timeplan</a></li>
                 <li><a href="interesser.html">Interresser</a></li>
+                <li><a href="bildegalleri.html">Bildegalleri</a></li>
             </ul>
         </div>
     </header>
     <h1>Timeplan</h1>
-    <div class="container">
+    <div class="grid-container">
 
         <table>
             <thead>
@@ -219,10 +108,30 @@
     </div>
     <div class="fag-valg">
         <h5>Fagvalg</h5>
-        <p>Jeg går SSØ her på Nadderud VGS. Da jeg skulle velge programfag til 2. klasse visste jeg også at det var den retningen jeg kom til å gå. Likevel visste jeg også godt at it og programmering er noe jeg syntes er spennende, og derfor et fag jeg kom til å ha lyst til å ta.</p>
+        <p>Jeg går SSØ her på Nadderud VGS. Da jeg skulle velge programfag til 2. klasse visste jeg også at det var den
+            retningen jeg kom til å gå. Likevel visste jeg også godt at it og programmering er noe jeg syntes er
+            spennende, og derfor et fag jeg kom til å ha lyst til å ta. Jeg valgte fagene Rettslære og Samfunnsøkonomi innenfor SSØ blokken fordi det var de fagene jeg både var mest interessert i, men også fordi jeg tror det er de jeg får mest bruk for videre i livet. </p>
     </div>
-    <footer>
-        <h1>Min footer</h1>
+    <div class="framtiden">
+        <img src="./bilder/ChatGPT Image 29. okt. 2025, 17_24_34.png" alt="">
+        <div class="framtiden-tekst">
+            <h6>Fremtidige Meg</h6>
+            <p>Jeg har store ambisjoner. Kanskje ikke om 10 år, men senere i livet har jeg har et mål og håp om å jobbe i FN. Jeg vil gjøre verden til en bedre sted, og målet mitt er derfor FN eller en annen liknende organisasjon som jobber for akkurat dette. Bildet på siden er AI generet av hvordan jeg ser for meg selv i framtiden.</p>
+        </div>
+    </div>
+    <footer class="social-footer">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/miriamghaug" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.snapchat.com/add/miriam_haug" target="_blank" aria-label="Snapchat">
+                <i class="fab fa-snapchat-ghost"></i>
+            </a>
+            <a href="https://www.facebook.com/miriamhaug" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Miriam Geirhovd Haug. Alle rettigheter reservert.</p>
     </footer>
 </body>
 

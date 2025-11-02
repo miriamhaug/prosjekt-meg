@@ -1,4 +1,6 @@
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+       
+       
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
         /* CSS reset */
@@ -19,6 +21,7 @@
             background-color: rgb(167, 197, 223)
                 /* rgb(58, 115, 166) */
             ;
+
         }
 
         *,
@@ -70,30 +73,29 @@
             margin: 0 auto;
         }
 
-        /*   nav{
-            background-color: aliceblue;
-            color: rgb(251, 251, 251);
+        .social-footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
         }
-        nav > ul{
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            padding: 20px;
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 24px;
+            transition: color 0.3s ease;
         }
-        nav a{
-            
-            color: rgb(143, 177, 206);
-            text-decoration: none;
-            padding: 20px;
-            border-radius: 10px;
+
+        .social-icons a:hover {
+            color: #ffcc00;
         }
-        nav a:hover{
-            background-color: white;
-            color: black;
-            transition: 500ms;
+
+        .social-footer p {
+            margin-top: 10px;
+            font-size: 14px;
         }
- */
+
         /* introduksjon til meg */
         .container {
             display: grid;
@@ -155,7 +157,7 @@
             padding: 20px;
 
             margin: 0 auto;
-            align-items: center;
+            margin-top: 30px;
             box-shadow: 10px 10px 10px;
             background-color: aliceblue;
             max-width: 400px;
@@ -167,10 +169,64 @@
 
         }
 
+        .leve-uten img {
+            width: 300px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
 
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .leve-uten>img {
+            width: 300px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+
+        .leve-uten-bilder {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* tre like kolonner */
+            gap: 10px;
+            /* valgfritt mellomrom */
+        }
+
+        .bildeboks {
+            width: 200px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bildeboks img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            /* valgfritt for avrundede hjørner */
+        }
+
+        .bildetekst {
+            margin-top: 10px;
+            background-color: #f0f0f0;
+            padding: 8px;
+            border-radius: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        @media (max-width: 600px) {
+            .galleri-rad {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
 
         .footer {
             grid-area: footer;
+            background-color: aliceblue;
+            margin-top: 20px;
+            align-items: baseline;
         }
 
 
@@ -179,14 +235,15 @@
 
         /* timeplan */
 
+
         body {
             align-items: center;
             background-color: rgb(167, 197, 223);
         }
 
 
-        .container {
-            max-width: 800;
+        .grid-container {
+            max-width: 1200px;
             margin: 0 auto;
             background-color: rgb(167, 197, 223);
             padding-left: 20px;
@@ -214,7 +271,11 @@
             width: 100%;
             background-color: #fff;
             table-layout: fixed;
+
+
         }
+
+
 
 
         h1 {
@@ -259,11 +320,53 @@
 
         .Klassenstime {
             background-color: rgb(142, 182, 218);
+
+        }
+
+        h5 {
+            font-size: 30px;
+        }
+
+        h6 {
+            font-size: 30px;
         }
 
         .fag-valg {
+            background-color: rgb(202, 225, 245);
             text-align: center;
+            margin: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+
         }
+
+        .framtiden {
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 1200px;
+        }
+
+        .framtiden>img {
+            object-fit: contain;
+            display: block;
+            width: 400px;
+            align-items: center;
+            padding-left: 50px;
+            padding-bottom: 40px;
+            border-radius: 50% / 30%;
+        }
+
+        .framtiden-tekst {
+            background-color: rgb(195, 234, 247);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+
 
         /* interesser */
         h1 {
@@ -279,9 +382,9 @@
             align-items: center;
         }
 
-        .Dans img{
+        .Dans img {
             padding: 20px;
-            
+
         }
 
         .tekst-dans {
@@ -400,4 +503,55 @@
             height: auto;
             object-fit: cover;
             padding-top: 20px;
+            padding-bottom: 20px;
         }
+
+        /* Bildegalleri */
+
+        .bildegalleri img {
+
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            clip-path: path("M 100 30 C 100 0, 0 0, 0 60 C 0 100, 100 180, 100 180 C 100 180, 200 100, 200 60 C 200 0, 100 0, 100 30 Z");
+            display: grid;
+            grid-template-columns: repeat 5(1fr);
+
+        }
+
+        .galleri1 {
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .galleri2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .galleri3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .galleri4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .galleri5 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
